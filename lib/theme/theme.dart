@@ -20,6 +20,7 @@ class AppTheme {
         colorScheme: ColorScheme.fromSwatch().copyWith(
             primary: AppThemeColours.primaryColour,
             secondary: AppThemeColours.secondaryColour,
+            tertiary: AppThemeColours.tertiaryColour,
             shadow: AppThemeColours.shadowColour),
 
         //! SNACK BAR THEME
@@ -38,15 +39,15 @@ class AppTheme {
         //! TEXT
         textTheme: TextTheme(
             headline2: GoogleFonts.poppins(
-                fontWeight: FontWeight.w700,
-                fontSize: 32.0,
+                fontWeight: FontWeight.w600,
+                fontSize: 48.0,
                 color: AppThemeColours.textColourPrimary),
             bodyText1: GoogleFonts.poppins(
                 fontWeight: FontWeight.w500,
                 color: AppThemeColours.textColourPrimary,
                 fontSize: 21.0),
             bodyText2: GoogleFonts.poppins(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: AppThemeColours.textColourPrimary,
                 fontSize: 16.0)),
 
@@ -60,7 +61,7 @@ class AppTheme {
                     color: AppThemeColours.textColourPrimary,
                     fontSize: 16.0),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(32.0)))),
+                    borderRadius: BorderRadius.circular(12.0)))),
 
         //! INPUT DECORATION
         inputDecorationTheme: InputDecorationTheme(
@@ -86,26 +87,28 @@ class AppTheme {
 //! THEME COLOURS.
 abstract class AppThemeColours {
   //! MAIN COLOUR
-  static Color primaryColour = const Color(0xFF273EBD);
-  static Color secondaryColour = const Color(0xFF0D0811);
+  static Color primaryColour = const Color(0xFF6B8CE8);
+  static Color secondaryColour = const Color(0xFF0B1A47);
   static Color tertiaryColour = Colors.white;
 
   //! BACKGROUND COLOURS
-  static Color backgroundColour = const Color(0xFFE1E6F6);
-  static Color scaffoldBackgroundColour = const Color(0xFFE1E6F6);
+  static Color backgroundColour = const Color(0xFFE7ECF6);
+  static Color scaffoldBackgroundColour = const Color(0xFFE7ECF6);
 
   //! SHADOW COLOUR
-  static Color shadowColour = const Color(0xFFA0A9DA);
+  static Color shadowColour =
+      const Color(0xFF0B29EF).withOpacity(0.3); // const Color(0xFFA0A9DA);
 
   //! TEXT COLOURS
   static Color textColourPrimary = Colors.white;
-  static Color textColourSecondary = const Color(0xFF273EBD);
+  static Color textColourSecondary =
+      const Color(0xFF648CE8); // const Color(0xFF5165e4);
 
   static Color lettersAndIconsFaintColour = const Color(0xFF565759);
   static Color focusedTextFormFieldColour = const Color(0xFF0B29EF);
 
   //! ELEVATED BUTTON AND CONTAINERS
-  static Color elevatedButtonBackgroundColour = const Color(0xFF0D0811);
+  static Color elevatedButtonBackgroundColour = const Color(0xFFFEA742);
   static Color containersBackgroundColourPrimary = Colors.white;
   static Color containersBackgroundColourSecondary = const Color(0xFF273EBD);
 

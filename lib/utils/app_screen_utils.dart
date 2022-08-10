@@ -4,9 +4,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppScreenUtils {
   //! PADDING
   static const EdgeInsets appUIDefaultPadding =
-      EdgeInsets.symmetric(vertical: 12.0, horizontal: 18.0);
+      EdgeInsets.symmetric(vertical: 6.0, horizontal: 250.0);
+  static const EdgeInsets headerPadding =
+      EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0);
+  static const EdgeInsets containerPaddingSmall =
+      EdgeInsets.symmetric(vertical: 16.0, horizontal: 21.0);
   static const EdgeInsets elevatedButtonDefaultPadding =
-      EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0);
+      EdgeInsets.symmetric(vertical: 24.0, horizontal: 42.0);
   static const EdgeInsets textFormFieldDefaultPadding =
       EdgeInsets.symmetric(vertical: 12.0, horizontal: 18.0);
 

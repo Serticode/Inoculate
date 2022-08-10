@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:inoculate/router/router.dart';
@@ -17,6 +19,14 @@ class Inoculate extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: AppTheme.theTheme,
         onGenerateRoute: AppNavigator.generateRoute,
+        //! SCROLL BEHAVIOUR CLASS, ACCEPTING ONLY TWO TYPES OF SCROLL DEVICES;
+        //! MOUSE AND TOUCH.
+        scrollBehavior: const MaterialScrollBehavior().copyWith(dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown
+        }),
         home: LayoutBuilder(
             builder: (context, constraints) => ScreenUtilInit(
                 designSize: Size(constraints.maxWidth, constraints.maxHeight),

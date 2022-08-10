@@ -5,7 +5,6 @@ import 'package:inoculate/router/router.dart';
 import 'package:inoculate/router/routes.dart';
 import 'package:inoculate/theme/theme.dart';
 import 'package:inoculate/utils/app_screen_utils.dart';
-import 'package:inoculate/widgets/custom_text_widget.dart';
 
 class Wrapper extends StatefulWidget {
   const Wrapper({Key? key}) : super(key: key);
@@ -46,9 +45,7 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
         body: LayoutBuilder(
-            builder: (context, constraints) => Padding(
-                padding: AppScreenUtils.appUIDefaultPadding,
-                child: Center(
+            builder: (context, constraints) => Center(
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -86,7 +83,7 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
                               fontSize: 32.0)),
 
                       //! SPACER
-                      AppScreenUtils.verticalSpaceSmall,
+                      AppScreenUtils.verticalSpaceMedium,
 
                       SizedBox(
                           width: constraints.maxWidth * 0.06,
@@ -94,6 +91,6 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
                               valueColor: AlwaysStoppedAnimation<Color>(
                                   AppThemeColours.secondaryColour),
                               value: _liquidProgressIndicatorValue))
-                    ])))));
+                    ]))));
   }
 }
