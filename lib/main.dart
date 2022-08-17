@@ -14,7 +14,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:inoculate/router/router.dart';
-import 'package:inoculate/screens/landing_page/pages/auth_wrapper.dart';
 import 'package:inoculate/screens/wrapper/wrapper.dart';
 import 'package:inoculate/theme/theme.dart';
 
