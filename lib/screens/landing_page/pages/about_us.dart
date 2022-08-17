@@ -312,6 +312,10 @@ class AboutUs extends StatelessWidget {
       if (!await launchUrl(Uri.parse("https://github.com/munas-git"))) {
         throw "Could not launch Serticode's GitHub Profile";
       }
-    } else {}
+    } else if (teamMember.contains("abraham")) {
+      if (!await launchUrl(Uri.parse("https://github.com/caleb30000"))) {
+        throw "Could not launch Serticode's GitHub Profile";
+      }
+    }
   }
 }
