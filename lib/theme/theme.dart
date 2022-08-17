@@ -28,7 +28,7 @@ class AppTheme {
             elevation: 8.0,
             backgroundColor: AppThemeColours.snackbarBackgroundColour,
             contentTextStyle: GoogleFonts.poppins(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: AppThemeColours.textColourPrimary,
                 fontSize: 12.0),
             shape: const RoundedRectangleBorder(
@@ -39,15 +39,15 @@ class AppTheme {
         //! TEXT
         textTheme: TextTheme(
             headline2: GoogleFonts.poppins(
-                fontWeight: FontWeight.w600,
-                fontSize: 32.0,
+                fontWeight: FontWeight.w500,
+                fontSize: 28.0,
                 color: AppThemeColours.textColourPrimary),
             bodyText1: GoogleFonts.poppins(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: AppThemeColours.textColourPrimary,
                 fontSize: 14.0),
             bodyText2: GoogleFonts.poppins(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: AppThemeColours.textColourPrimary,
                 fontSize: 12.0)),
 
@@ -57,7 +57,7 @@ class AppTheme {
                 padding: AppScreenUtils.elevatedButtonDefaultPadding,
                 primary: AppThemeColours.elevatedButtonBackgroundColour,
                 textStyle: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                     color: AppThemeColours.textColourPrimary,
                     fontSize: 12.0),
                 shape: RoundedRectangleBorder(
@@ -88,10 +88,10 @@ class AppTheme {
                     color: AppThemeColours.focusedTextFormFieldColour),
                 borderRadius: BorderRadius.circular(21.0)),
             labelStyle: GoogleFonts.poppins(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: AppThemeColours.secondaryColour.withOpacity(0.8),
                 fontSize: 12.0),
-            hintStyle: GoogleFonts.poppins(fontWeight: FontWeight.w500, color: AppThemeColours.secondaryColour.withOpacity(0.8), fontSize: 12.0)));
+            hintStyle: GoogleFonts.poppins(fontWeight: FontWeight.w400, color: AppThemeColours.secondaryColour.withOpacity(0.8), fontSize: 12.0)));
   }
 }
 

@@ -7,8 +7,8 @@ class UserEditDetails extends StatelessWidget {
   const UserEditDetails({Key? key}) : super(key: key);
   static final DateTime now = DateTime.now();
   static final TextStyle _editBioDetailsTextStyle = GoogleFonts.poppins(
-      fontWeight: FontWeight.w500,
-      fontSize: 14.0,
+      fontWeight: FontWeight.w400,
+      fontSize: 12.0,
       color: AppThemeColours.secondaryColour);
 
   @override

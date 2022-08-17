@@ -154,7 +154,7 @@ class PageOne extends StatelessWidget {
                                             BorderRadius.circular(8.0)),
                                     child: Center(
                                         child: Icon(Icons.check_box_rounded,
-                                            size: 21,
+                                            size: 18,
                                             color: AppThemeColours
                                                 .tertiaryColour))),
 
@@ -260,7 +260,7 @@ class PageOne extends StatelessWidget {
                                                         Icon(
                                                             Icons
                                                                 .arrow_forward_ios,
-                                                            size: 16.0,
+                                                            size: 14.0,
                                                             color: AppThemeColours
                                                                 .tertiaryColour)
                                                       ])))

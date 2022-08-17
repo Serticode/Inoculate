@@ -276,7 +276,7 @@ class PageThree extends StatelessWidget {
                               //! ANSWER
                               Text("Vaccine Type",
                                   style: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.w500,
                                       fontSize: 18.0,
                                       color: Theme.of(context)
                                           .colorScheme
@@ -356,7 +356,7 @@ class PageThree extends StatelessWidget {
                                               const SizedBox(width: 10),
 
                                               //! ITEM NAME
-                                              Text("SnoVac",
+                                              Text("SinoVac",
                                                   style: Theme.of(context)
                                                       .textTheme
                                                       .bodyText2!
@@ -572,7 +572,7 @@ class PageThree extends StatelessWidget {
                               //! ANSWER
                               Text("Here are some \nnews articles about COVID",
                                   style: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.w500,
                                       fontSize: 18.0,
                                       color: Theme.of(context)
                                           .colorScheme

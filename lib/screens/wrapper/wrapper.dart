@@ -55,15 +55,15 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
                           shape: const CircleBorder(),
                           shadowColor: AppThemeColours.shadowColour,
                           child: CircleAvatar(
-                              radius: constraints.maxWidth * 0.04,
+                              radius: 30,
                               backgroundColor: AppThemeColours.tertiaryColour,
                               child: CircleAvatar(
-                                  radius: constraints.maxWidth * 0.035,
+                                  radius: 25,
                                   backgroundColor:
                                       AppThemeColours.secondaryColour,
-                                  child: CircleAvatar(
-                                      radius: constraints.maxWidth * 0.030,
-                                      backgroundImage: const AssetImage(
+                                  child: const CircleAvatar(
+                                      radius: 20,
+                                      backgroundImage: AssetImage(
                                           "assets/inoculate_logo.jpg"))))),
 
                       //! SPACER
@@ -80,7 +80,7 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
                                     blurRadius: 21.0,
                                     color: AppThemeColours.shadowColour)
                               ],
-                              fontSize: 18.0)),
+                              fontSize: 16.0)),
 
                       //! SPACER
                       AppScreenUtils.verticalSpaceMedium,

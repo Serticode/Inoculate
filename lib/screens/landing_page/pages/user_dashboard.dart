@@ -9,7 +9,7 @@ class UserDashboard extends StatelessWidget {
   const UserDashboard({Key? key}) : super(key: key);
   static final DateTime now = DateTime.now();
   static final TextStyle _resultTextStyle = GoogleFonts.poppins(
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
       fontSize: 12.0,
       color: AppThemeColours.secondaryColour);
 

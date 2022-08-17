@@ -169,10 +169,8 @@ class AboutUs extends StatelessWidget {
                                                           style: Theme.of(
                                                                   context)
                                                               .textTheme
-                                                              .bodyText2!
+                                                              .bodyText1!
                                                               .copyWith(
-                                                                  fontSize:
-                                                                      18.0,
                                                                   color: _teamMembersNames
                                                                           .indexOf(
                                                                               teamMember)
@@ -194,7 +192,7 @@ class AboutUs extends StatelessWidget {
                                                 textAlign: TextAlign.center,
                                                 style: Theme.of(context)
                                                     .textTheme
-                                                    .bodyText1!
+                                                    .bodyText2!
                                                     .copyWith(
                                                         color: AppThemeColours
                                                             .secondaryColour)),
@@ -236,13 +234,13 @@ class AboutUs extends StatelessWidget {
             shape: const CircleBorder(),
             shadowColor: AppThemeColours.shadowColour,
             child: CircleAvatar(
-                radius: 45,
+                radius: 25,
                 backgroundColor: AppThemeColours.tertiaryColour,
                 child: CircleAvatar(
-                    radius: 35,
+                    radius: 23,
                     backgroundColor: AppThemeColours.secondaryColour,
                     child: const CircleAvatar(
-                        radius: 30,
+                        radius: 18,
                         backgroundImage:
                             AssetImage("assets/inoculate_logo.jpg"))))),
 
@@ -260,7 +258,7 @@ class AboutUs extends StatelessWidget {
                       blurRadius: 21.0,
                       color: AppThemeColours.shadowColour)
                 ],
-                fontSize: 32.0)),
+                fontSize: 18.0)),
 
         //! SPACER
         const SizedBox(height: 20.0),

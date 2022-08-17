@@ -7,7 +7,7 @@ class AdminEditPatientDetails extends StatelessWidget {
   const AdminEditPatientDetails({Key? key}) : super(key: key);
   static final DateTime now = DateTime.now();
   static final TextStyle _editBioDetailsTextStyle = GoogleFonts.poppins(
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
       fontSize: 14.0,
       color: AppThemeColours.secondaryColour);
 

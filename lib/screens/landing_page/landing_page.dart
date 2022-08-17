@@ -44,11 +44,16 @@ class _LandingPageState extends State<LandingPage> {
                               CircleAvatar(
                                   radius: 20,
                                   backgroundColor:
-                                      AppThemeColours.secondaryColour,
-                                  child: const CircleAvatar(
-                                      radius: 15,
-                                      backgroundImage: AssetImage(
-                                          "assets/inoculate_logo.jpg"))),
+                                      AppThemeColours.tertiaryColour,
+                                  child: CircleAvatar(
+                                    radius: 18,
+                                    backgroundColor:
+                                        AppThemeColours.secondaryColour,
+                                    child: const CircleAvatar(
+                                        radius: 15,
+                                        backgroundImage: AssetImage(
+                                            "assets/inoculate_logo.jpg")),
+                                  )),
 
                               //! SPACER
                               const SizedBox(width: 10),
@@ -57,7 +62,7 @@ class _LandingPageState extends State<LandingPage> {
                               Text("Inoculate",
                                   style: GoogleFonts.poppins(
                                       color: Colors.white,
-                                      fontWeight: FontWeight.w500,
+                                      fontWeight: FontWeight.w400,
                                       shadows: [
                                         Shadow(
                                             offset: const Offset(1.0, 2.0),

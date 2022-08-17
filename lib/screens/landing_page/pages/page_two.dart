@@ -42,8 +42,8 @@ class PageTwo extends StatelessWidget {
                           //! ANSWER
                           Text("Viruses Are Always \nGetting Stronger",
                               style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 24.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 18.0,
                                   color:
                                       Theme.of(context).colorScheme.secondary)),
 
@@ -268,8 +268,8 @@ class PageTwo extends StatelessWidget {
                     //! ANSWER
                     Text("Rules patients must obey",
                         style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 24.0,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 18.0,
                             color: Theme.of(context).colorScheme.secondary)),
 
                     //! ANSWER
