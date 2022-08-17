@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:inoculate/screens/landing_page/pages/about_us.dart';
+import 'package:inoculate/screens/landing_page/pages/auth_wrapper.dart';
 import 'package:inoculate/screens/landing_page/pages/page_one.dart';
 import 'package:inoculate/screens/landing_page/pages/page_three.dart';
 import 'package:inoculate/screens/landing_page/pages/page_two.dart';
@@ -30,7 +31,7 @@ class _LandingPageState extends State<LandingPage> {
             builder: (context, constraints) => Column(children: [
                   //! HEADER
                   Container(
-                      height: constraints.maxHeight * 0.08,
+                      height: constraints.maxHeight * 0.1,
                       color: AppThemeColours.primaryColour,
                       padding: AppScreenUtils.appUIDefaultPadding,
                       child: Row(
@@ -63,7 +64,7 @@ class _LandingPageState extends State<LandingPage> {
                                             blurRadius: 21.0,
                                             color: AppThemeColours.shadowColour)
                                       ],
-                                      fontSize: 16.0))
+                                      fontSize: 14.0))
                             ]),
 
                             //! SPACER
@@ -80,8 +81,33 @@ class _LandingPageState extends State<LandingPage> {
                                                 horizontal: 5.0),
                                             padding:
                                                 AppScreenUtils.headerPadding,
-                                            child: Text(item))))
-                                    .toList())
+                                            child: Text(item,
+                                                style: Theme.of(context)
+                                                    .textTheme
+                                                    .bodyText1))))
+                                    .toList()),
+
+                            //! SPACER
+                            const SizedBox(width: 20.0),
+
+                            //! BUTTONS
+                            TextButton(
+                                onPressed: () => showAuthDialogue(
+                                    context: context,
+                                    screenSize: MediaQuery.of(context).size),
+                                style: TextButton.styleFrom(
+                                    side: BorderSide(
+                                        color: AppThemeColours.tertiaryColour,
+                                        width: 2),
+                                    padding:
+                                        AppScreenUtils.headerButtonPadding),
+                                child: Text("Make a reservation",
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyText2!
+                                        .copyWith(
+                                            color: AppThemeColours
+                                                .tertiaryColour)))
                           ])),
 
                   //! BODY
@@ -111,5 +137,22 @@ class _LandingPageState extends State<LandingPage> {
     controller.animateToPage(index,
         duration: const Duration(seconds: 1),
         curve: Curves.fastLinearToSlowEaseIn);
+  }
+
+  //! AUTH DIALOGUE
+  showAuthDialogue({required BuildContext context, required Size screenSize}) {
+    showDialog(
+        context: context,
+        builder: (context) => Dialog(
+            elevation: 12.0,
+            child: Container(
+                height: screenSize.height * 0.8,
+                width: screenSize.width * 0.3,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(21.0),
+                    border: Border.all(
+                        color: AppThemeColours.tertiaryColour.withOpacity(0.5),
+                        width: 3)),
+                child: const AuthWrapper())));
   }
 }

@@ -7,12 +7,20 @@ class AppScreenUtils {
       EdgeInsets.symmetric(vertical: 6.0, horizontal: 250.0);
   static const EdgeInsets headerPadding =
       EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0);
-  static const EdgeInsets containerPaddingSmall =
+  static const EdgeInsets headerButtonPadding =
+      EdgeInsets.symmetric(vertical: 21.0, horizontal: 24.0);
+  static const EdgeInsets listOfVaccinesPadding =
       EdgeInsets.symmetric(vertical: 16.0, horizontal: 21.0);
+  static const EdgeInsets dashboardNavPadding =
+      EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0);
+  static const EdgeInsets containerPaddingSmall =
+      EdgeInsets.symmetric(vertical: 8.0, horizontal: 21.0);
+  static const EdgeInsets containerPaddingTiny =
+      EdgeInsets.symmetric(vertical: 16.0, horizontal: 8.0);
   static const EdgeInsets elevatedButtonDefaultPadding =
-      EdgeInsets.symmetric(vertical: 24.0, horizontal: 42.0);
+      EdgeInsets.symmetric(vertical: 18.0, horizontal: 21.0);
   static const EdgeInsets textFormFieldDefaultPadding =
-      EdgeInsets.symmetric(vertical: 12.0, horizontal: 18.0);
+      EdgeInsets.symmetric(vertical: 18.0, horizontal: 32.0);
 
   //! SPACERS
   static Widget horizontalSpaceSmall = SizedBox(width: 10.0.w);

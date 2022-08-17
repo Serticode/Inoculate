@@ -37,7 +37,7 @@ class PageTwo extends StatelessWidget {
                                       color: AppThemeColours.primaryColour)),
 
                           //! SPACER
-                          const SizedBox(height: 20.0),
+                          const SizedBox(height: 10.0),
 
                           //! ANSWER
                           Text("Viruses Are Always \nGetting Stronger",
@@ -48,25 +48,23 @@ class PageTwo extends StatelessWidget {
                                       Theme.of(context).colorScheme.secondary)),
 
                           //! SPACER
-                          const SizedBox(height: 20.0),
+                          const SizedBox(height: 10.0),
 
                           //! ANSWER
                           Text(
                               "Viruses always evolve. \nBy getting You and Your Family vaccinated, \nYou all got some advantages like ...",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText2!
+                                  .bodyText1!
                                   .copyWith(color: Colors.grey.shade600)),
 
                           //! SPACER
-                          const SizedBox(height: 20.0),
+                          const SizedBox(height: 10.0),
 
                           //! BENEFITS
                           Row(
                             children: _vaccinationBenefits
                                 .map((item) => Container(
-                                    width: MediaQuery.of(context).size.width *
-                                        0.18,
                                     margin: const EdgeInsets.only(right: 21.0),
                                     padding:
                                         AppScreenUtils.containerPaddingSmall,
@@ -77,15 +75,15 @@ class PageTwo extends StatelessWidget {
                                     child: Row(children: [
                                       //! EMOJI
                                       Container(
-                                          height: 60,
-                                          width: 60,
+                                          height: 45,
+                                          width: 45,
                                           decoration: BoxDecoration(
                                               color: AppThemeColours
                                                   .textColourSecondary,
                                               borderRadius:
                                                   BorderRadius.circular(8.0)),
                                           child: Transform.scale(
-                                              scale: 1.8,
+                                              scale: 1.5,
                                               child: Center(
                                                   child: Text(
                                                       _vaccinationEmojis[
@@ -95,7 +93,7 @@ class PageTwo extends StatelessWidget {
                                                           TextAlign.center)))),
 
                                       //! SPACER
-                                      const SizedBox(width: 20),
+                                      const SizedBox(width: 10),
 
                                       //! ITEM NAME
                                       Text(item,
@@ -121,15 +119,15 @@ class PageTwo extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 CircleAvatar(
-                                    radius: 15.0,
+                                    radius: 16.0,
                                     backgroundColor:
                                         AppThemeColours.primaryColour,
                                     child: CircleAvatar(
-                                        radius: 12.0,
+                                        radius: 14.0,
                                         backgroundColor:
                                             AppThemeColours.backgroundColour,
                                         child: Icon(Icons.arrow_back_ios,
-                                            size: 14.0,
+                                            size: 12.0,
                                             color: AppThemeColours
                                                 .primaryColour))),
 
@@ -137,11 +135,11 @@ class PageTwo extends StatelessWidget {
                                 const SizedBox(width: 20.0),
 
                                 CircleAvatar(
-                                    radius: 15.0,
+                                    radius: 16.0,
                                     backgroundColor:
                                         AppThemeColours.textColourSecondary,
                                     child: const Icon(Icons.arrow_forward_ios,
-                                        size: 14.0, color: Colors.white))
+                                        size: 12.0, color: Colors.white))
                               ]),
 
                           //! SPACER
@@ -186,16 +184,16 @@ class PageTwo extends StatelessWidget {
                                                                     //! EMOJI
                                                                     Container(
                                                                         height:
-                                                                            60,
+                                                                            45,
                                                                         width:
-                                                                            60,
+                                                                            45,
                                                                         decoration: BoxDecoration(
                                                                             color:
                                                                                 Colors.white.withOpacity(0.2),
                                                                             border: Border.all(color: Colors.white.withOpacity(0.8), width: 2.0),
                                                                             borderRadius: BorderRadius.circular(8.0)),
                                                                         child: Transform.scale(
-                                                                            scale: 1.8,
+                                                                            scale: 1.5,
                                                                             child: const Center(
                                                                               child: Text("💪", textAlign: TextAlign.center),
                                                                             ))),
@@ -210,7 +208,7 @@ class PageTwo extends StatelessWidget {
                                                                         "Gaining Immunity",
                                                                         style: Theme.of(context)
                                                                             .textTheme
-                                                                            .bodyText2!
+                                                                            .bodyText1!
                                                                             .copyWith(color: Colors.white))
                                                                   ]))))
                                                           .toList()),
@@ -248,7 +246,7 @@ class PageTwo extends StatelessWidget {
 
                                                   //! ICON
                                                   Icon(Icons.arrow_forward_ios,
-                                                      size: 14.0,
+                                                      size: 12.0,
                                                       color: Colors.white)
                                                 ])))
                                   ])))
@@ -257,52 +255,41 @@ class PageTwo extends StatelessWidget {
 
               //! FOOTER
               Expanded(
-                  child: Column(children: [
-                //! HEAD
-                Expanded(
-                    flex: 2,
-                    child: Column(children: [
-                      //! QUESTION
-                      Text("Can I get vaccinated?",
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText1!
-                              .copyWith(color: AppThemeColours.primaryColour)),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                    //! HEAD
+                    Text("Can I get vaccinated?",
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText1!
+                            .copyWith(color: AppThemeColours.primaryColour)),
 
-                      //! SPACER
-                      const SizedBox(height: 5.0),
+                    //! ANSWER
+                    Text("Rules patients must obey",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w700,
+                            fontSize: 24.0,
+                            color: Theme.of(context).colorScheme.secondary)),
 
-                      //! ANSWER
-                      Text("Rules patients must obey",
-                          style: GoogleFonts.poppins(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 24.0,
-                              color: Theme.of(context).colorScheme.secondary)),
+                    //! ANSWER
+                    Text(
+                        "There are few rules patients must know and obey, before they get vaccinated. \nHere are some of the rules ...",
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText2!
+                            .copyWith(color: Colors.grey.shade600)),
 
-                      //! SPACER
-                      const SizedBox(height: 5.0),
-
-                      //! ANSWER
-                      Text(
-                          "There are few rules patients must know and obey, before they get vaccinated. \nHere are some of the rules ...",
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText2!
-                              .copyWith(color: Colors.grey.shade600))
-                    ])),
-
-                //! FOOTER
-                Expanded(
-                    flex: 4,
-                    child: LayoutBuilder(
-                        builder: (context, constraints) => Stack(children: [
-                              //! TOP
-                              Align(
-                                  alignment: Alignment.topLeft,
-                                  child: Container(
-                                      height: constraints.maxHeight * 0.9,
-                                      width: constraints.maxWidth * 0.48,
+                    //! FOOTER
+                    LayoutBuilder(
+                        builder: (context, constraints) => Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  //! TOP
+                                  Container(
+                                      width: constraints.maxWidth * 0.45,
                                       padding:
                                           AppScreenUtils.containerPaddingSmall,
                                       decoration: BoxDecoration(
@@ -313,8 +300,6 @@ class PageTwo extends StatelessWidget {
                                               bottomLeft:
                                                   Radius.circular(21.0))),
                                       child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceEvenly,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
@@ -322,8 +307,8 @@ class PageTwo extends StatelessWidget {
                                             Text("Blood pressure",
                                                 style: Theme.of(context)
                                                     .textTheme
-                                                    .bodyText1!
-                                                    .copyWith(fontSize: 24.0)),
+                                                    .bodyText2!
+                                                    .copyWith(fontSize: 18.0)),
 
                                             //! SPACER
                                             const SizedBox(height: 10.0),
@@ -339,34 +324,42 @@ class PageTwo extends StatelessWidget {
                                             SizedBox(
                                                 width: (constraints.maxWidth *
                                                         0.46) /
-                                                    2.5,
+                                                    2.2,
                                                 child: ElevatedButton(
                                                     onPressed: () {},
                                                     style: ElevatedButton.styleFrom(
                                                         primary: AppThemeColours
                                                             .secondaryColour),
-                                                    child: Row(children: const [
+                                                    child: Row(children: [
                                                       //! BUTTON TEXT
-                                                      Text("Read more"),
+                                                      Text("Read more",
+                                                          style:
+                                                              Theme.of(context)
+                                                                  .textTheme
+                                                                  .bodyText2),
 
                                                       //! SPACER
-                                                      SizedBox(width: 10.0),
+                                                      const SizedBox(
+                                                          width: 10.0),
 
                                                       //! ICON
-                                                      Icon(
+                                                      const Icon(
                                                           Icons
                                                               .arrow_forward_ios,
-                                                          size: 14.0,
+                                                          size: 12.0,
                                                           color: Colors.white)
                                                     ]))),
 
+                                            const SizedBox(height: 10),
+
                                             //! NUMBER
-                                            Align(
-                                                alignment:
-                                                    Alignment.bottomRight,
-                                                child: Container(
-                                                    height: 50.0,
-                                                    width: 50.0,
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.end,
+                                              children: [
+                                                Container(
+                                                    height: 35.0,
+                                                    width: 35.0,
                                                     padding: const EdgeInsets.all(
                                                         8.0),
                                                     decoration: BoxDecoration(
@@ -377,21 +370,22 @@ class PageTwo extends StatelessWidget {
                                                                 .withOpacity(
                                                                     0.8),
                                                             width: 2.0),
-                                                        borderRadius:
-                                                            const BorderRadius.only(
-                                                                topLeft: Radius.circular(
-                                                                    21.0))),
+                                                        borderRadius: const BorderRadius.only(
+                                                            topLeft: Radius.circular(
+                                                                21.0))),
                                                     child: Text("1",
-                                                        textAlign: TextAlign.center,
-                                                        style: Theme.of(context).textTheme.bodyText1)))
-                                          ]))),
+                                                        textAlign:
+                                                            TextAlign.center,
+                                                        style: Theme.of(context)
+                                                            .textTheme
+                                                            .bodyText2)),
+                                              ],
+                                            )
+                                          ])),
 
-                              //! BOTTOM
-                              Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: Container(
-                                      height: constraints.maxHeight * 0.9,
-                                      width: constraints.maxWidth * 0.48,
+                                  //! BOTTOM
+                                  Container(
+                                      width: constraints.maxWidth * 0.45,
                                       padding:
                                           AppScreenUtils.containerPaddingSmall,
                                       decoration: BoxDecoration(
@@ -399,7 +393,7 @@ class PageTwo extends StatelessWidget {
                                           borderRadius: const BorderRadius.only(
                                               topLeft: Radius.circular(21.0),
                                               topRight: Radius.circular(21.0),
-                                              bottomLeft:
+                                              bottomRight:
                                                   Radius.circular(21.0))),
                                       child: Column(
                                           mainAxisAlignment:
@@ -413,12 +407,12 @@ class PageTwo extends StatelessWidget {
                                                     .textTheme
                                                     .bodyText1!
                                                     .copyWith(
-                                                        fontSize: 24.0,
+                                                        fontSize: 18.0,
                                                         color: AppThemeColours
                                                             .secondaryColour)),
 
                                             //! SPACER
-                                            const SizedBox(height: 20.0),
+                                            const SizedBox(height: 10.0),
 
                                             //! MID
                                             Text(
@@ -431,21 +425,21 @@ class PageTwo extends StatelessWidget {
                                                             .grey.shade600)),
 
                                             //! SPACER
-                                            const SizedBox(height: 20.0),
+                                            const SizedBox(height: 10.0),
 
                                             //! BUTTON
                                             SizedBox(
                                                 width: (constraints.maxWidth *
                                                         0.46) /
-                                                    2.5,
+                                                    2.2,
                                                 child: ElevatedButton(
                                                     onPressed: () {},
                                                     style: ElevatedButton.styleFrom(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                    .symmetric(
-                                                                vertical: 21.0),
                                                         elevation: 0.0,
+                                                        side: BorderSide(
+                                                            color: AppThemeColours
+                                                                .secondaryColour,
+                                                            width: 2.0),
                                                         primary: AppThemeColours
                                                             .tertiaryColour),
                                                     child: Row(
@@ -471,39 +465,48 @@ class PageTwo extends StatelessWidget {
                                                           Icon(
                                                               Icons
                                                                   .arrow_forward_ios,
-                                                              size: 14.0,
+                                                              size: 12.0,
                                                               color: AppThemeColours
                                                                   .secondaryColour)
                                                         ]))),
 
+                                            //! SPACER
+                                            const SizedBox(height: 10.0),
+
                                             //! NUMBER
-                                            Align(
-                                                alignment:
-                                                    Alignment.bottomRight,
-                                                child: Container(
-                                                    height: 50.0,
-                                                    width: 50.0,
-                                                    padding: const EdgeInsets.all(
-                                                        8.0),
-                                                    decoration: BoxDecoration(
-                                                        color: AppThemeColours
-                                                            .primaryColour
-                                                            .withOpacity(0.2),
-                                                        border: Border.all(
-                                                            color: AppThemeColours
-                                                                .secondaryColour,
-                                                            width: 2.0),
-                                                        borderRadius:
-                                                            const BorderRadius.only(
-                                                                topLeft:
-                                                                    Radius.circular(
-                                                                        21.0))),
-                                                    child: Text("2",
-                                                        textAlign: TextAlign.center,
-                                                        style: Theme.of(context).textTheme.bodyText1!.copyWith(color: AppThemeColours.secondaryColour))))
-                                          ]))),
-                            ])))
-              ]))
+                                            Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                children: [
+                                                  Container(
+                                                      height: 35.0,
+                                                      width: 35.0,
+                                                      padding:
+                                                          const EdgeInsets.all(
+                                                              8.0),
+                                                      decoration: BoxDecoration(
+                                                          color: AppThemeColours
+                                                              .primaryColour
+                                                              .withOpacity(0.2),
+                                                          border: Border.all(
+                                                              color: AppThemeColours
+                                                                  .secondaryColour,
+                                                              width: 2.0),
+                                                          borderRadius:
+                                                              const BorderRadius.only(
+                                                                  topLeft: Radius.circular(
+                                                                      21.0))),
+                                                      child: Text("2",
+                                                          textAlign:
+                                                              TextAlign.center,
+                                                          style: Theme.of(context)
+                                                              .textTheme
+                                                              .bodyText2!
+                                                              .copyWith(color: AppThemeColours.secondaryColour)))
+                                                ])
+                                          ]))
+                                ]))
+                  ]))
             ])));
   }
 }

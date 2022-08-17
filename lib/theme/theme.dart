@@ -40,16 +40,16 @@ class AppTheme {
         textTheme: TextTheme(
             headline2: GoogleFonts.poppins(
                 fontWeight: FontWeight.w600,
-                fontSize: 48.0,
+                fontSize: 32.0,
                 color: AppThemeColours.textColourPrimary),
             bodyText1: GoogleFonts.poppins(
                 fontWeight: FontWeight.w500,
                 color: AppThemeColours.textColourPrimary,
-                fontSize: 21.0),
+                fontSize: 14.0),
             bodyText2: GoogleFonts.poppins(
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w500,
                 color: AppThemeColours.textColourPrimary,
-                fontSize: 16.0)),
+                fontSize: 12.0)),
 
         //! ELEVATED BUTTON
         elevatedButtonTheme: ElevatedButtonThemeData(
@@ -59,6 +59,17 @@ class AppTheme {
                 textStyle: GoogleFonts.poppins(
                     fontWeight: FontWeight.w500,
                     color: AppThemeColours.textColourPrimary,
+                    fontSize: 12.0),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0)))),
+
+        //! TEXT BUTTON
+        textButtonTheme: TextButtonThemeData(
+            style: TextButton.styleFrom(
+                padding: AppScreenUtils.containerPaddingSmall,
+                textStyle: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    color: AppThemeColours.textColourPrimary,
                     fontSize: 16.0),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0)))),
@@ -67,20 +78,20 @@ class AppTheme {
         inputDecorationTheme: InputDecorationTheme(
             contentPadding: AppScreenUtils.textFormFieldDefaultPadding,
             filled: true,
-            fillColor:
-                AppThemeColours.lettersAndIconsFaintColour.withOpacity(0.5),
+            fillColor: AppThemeColours.tertiaryColour.withOpacity(0.2),
             border:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(21.0)),
+                OutlineInputBorder(borderRadius: BorderRadius.circular(12.0)),
             focusColor: AppThemeColours.focusedTextFormFieldColour,
             focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
                     width: 1.2,
                     color: AppThemeColours.focusedTextFormFieldColour),
                 borderRadius: BorderRadius.circular(21.0)),
-            hintStyle: GoogleFonts.poppins(
+            labelStyle: GoogleFonts.poppins(
                 fontWeight: FontWeight.w500,
-                color: AppThemeColours.lettersAndIconsFaintColour,
-                fontSize: 14.0)));
+                color: AppThemeColours.secondaryColour.withOpacity(0.8),
+                fontSize: 12.0),
+            hintStyle: GoogleFonts.poppins(fontWeight: FontWeight.w500, color: AppThemeColours.secondaryColour.withOpacity(0.8), fontSize: 12.0)));
   }
 }
 
@@ -105,7 +116,7 @@ abstract class AppThemeColours {
       const Color(0xFF648CE8); // const Color(0xFF5165e4);
 
   static Color lettersAndIconsFaintColour = const Color(0xFF565759);
-  static Color focusedTextFormFieldColour = const Color(0xFF0B29EF);
+  static Color focusedTextFormFieldColour = const Color(0xFFFEA742);
 
   //! ELEVATED BUTTON AND CONTAINERS
   static Color elevatedButtonBackgroundColour = const Color(0xFFFEA742);

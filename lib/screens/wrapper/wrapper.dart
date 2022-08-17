@@ -80,7 +80,7 @@ class _WrapperState extends State<Wrapper> with TickerProviderStateMixin {
                                     blurRadius: 21.0,
                                     color: AppThemeColours.shadowColour)
                               ],
-                              fontSize: 32.0)),
+                              fontSize: 18.0)),
 
                       //! SPACER
                       AppScreenUtils.verticalSpaceMedium,
